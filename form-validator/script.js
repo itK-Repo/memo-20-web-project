@@ -7,7 +7,7 @@ const password2 = document.getElementById('password2');
 // Show input error message
 function showError(input, message) {
   const formControl = input.parentElement;
-  // MEMO: 클래스를 아예 덮어 쓰면, error 클래스를 add, remove 할 필요가 없다.
+  // MEMO: !클래스를 아예 덮어 쓰면, error 클래스를 add, remove 할 필요가 없다.
   formControl.className = 'form-control error';
   const small = formControl.querySelector('small');
   small.innerText = message;
@@ -73,7 +73,7 @@ function getFieldName(input) {
   return input.id.charAt(0).toUpperCase() + input.id.slice(1);
 }
 
-// MEMO: 함수를 조합하여 이벤트 리스너의 콜백함수를 만든다. 가독성 좋아진다. 재사용성 올라가고.
+// MEMO: !함수를 조합하여 이벤트 리스너의 콜백함수를 만든다. 가독성 좋아진다. 재사용성 올라가고.
 // Event listeners
 form.addEventListener('submit', function(e) {
   e.preventDefault();

@@ -60,7 +60,7 @@ h2 {
   outline: 0;
   border-color: #777;
 }
-/* MEMO: 상위 엘리먼트의 css 값에 따라 하위 엘리먼트의 css를 변경하는 구조이다. */
+/* MEMO: ! 상위 엘리먼트의 css 값에 따라 하위 엘리먼트의 css를 변경하는 구조이다. */
 .form-control.success input {
   border-color: var(--success-color);
 }
